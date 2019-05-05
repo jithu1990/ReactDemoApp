@@ -47,7 +47,6 @@ class DangerHtml extends Component {
           {securetext}
           <br />
           <div
-            key={insecuretext}
             dangerouslySetInnerHTML={this.createMarkup(insecuretext)}
           />
         </form>

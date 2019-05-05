@@ -5,6 +5,7 @@ import  MarkDown from "./components/MarkDown";
 import Attribute from "./components/Attribute";
 import BootBox from "./components/BootBox";
 import DangerHtml from "./components/DangerHtml";
+import noreferrer from "./components/noreferrer";
 
 const MainRouter = () => (
     <div>
@@ -14,6 +15,8 @@ const MainRouter = () => (
             <Route exact path="/attribute" component={Attribute} />
             <Route exact path="/markdown" component={MarkDown} />
             <Route exact path="/bootbox" component={BootBox} />
+            <Route exact path="/noreferrer" component={noreferrer} />
+
             {/* <Route exact path="/" component={Signin} /> */}
         </Switch>
     </div>

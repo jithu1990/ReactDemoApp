@@ -43,10 +43,16 @@ class Attribute extends Component {
                 className="btn btn-raised btn-primary"
                 target="_blank"
             >
-                Click here to visit the {this.state.url}
+               {/* Click here to visit the {this.state.url} */}
             </a>
 
-            <a href="newtab.html" target="_blank">Click here for new tab.</a>
+                    <ul>
+                        <li id="tarantula" data-animal-type={this.state.url}>Tarantula</li>
+                    </ul>
+
+            <a href="newtab.html" target="_blank">Click here for new tab.</a> 
+            <br></br>
+            <a href="newtab.html" target="_blank" rel="noreferrer">Click here for safer new tab.</a>
         </form>
             </div>
         );
