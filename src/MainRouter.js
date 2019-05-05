@@ -10,7 +10,7 @@ const MainRouter = () => (
     <div>
         <Switch>
             <Route exact path="/" component={Home} />
-            <Route exact path="/dangerhtml" component={DangerHtml} />
+            <Route exact path="/danger-html" component={DangerHtml} />
             <Route exact path="/attribute" component={Attribute} />
             <Route exact path="/markdown" component={MarkDown} />
             <Route exact path="/bootbox" component={BootBox} />
