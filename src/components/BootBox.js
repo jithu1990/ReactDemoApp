@@ -1,6 +1,9 @@
 import React from "react";
 import Bootbox from "bootbox";
 import { render } from "react-dom";
+var $ = require("jquery");
+global.jQuery = require("jquery");
+var bootstrap = require("bootstrap");
 
 class BootBox extends React.Component {
   state = {
@@ -26,17 +29,16 @@ class BootBox extends React.Component {
     });
   };
   handleRemoveRow = () => {
-
     this.setState({
       rows: this.state.rows.slice(0, -1)
     });
   };
-  handleRemoveSpecificRow = (idx) => () => {
-    const rows = [...this.state.rows]
-    Bootbox.alert(2);
-    rows.splice(idx, 1)
-    this.setState({ rows })
-  }
+  handleRemoveSpecificRow = idx => () => {
+    const rows = [...this.state.rows];
+    Bootbox.alert("blah");
+    rows.splice(idx, 1);
+    this.setState({ rows });
+  };
   render() {
     return (
       <div>
