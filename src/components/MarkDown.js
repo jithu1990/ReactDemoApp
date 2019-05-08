@@ -1,4 +1,5 @@
     import React, { Component } from "react";
+    import DomPurify from "dompurify";
     var showdown = require('showdown');
 
     class MarkDown extends Component {
@@ -16,7 +17,8 @@
         createMarkup =(text)=>{
             const convertor =  new showdown.Converter()
             const data = convertor.makeHtml(text)
-            return{__html:data}
+            //return{__html:data}
+            return {__html:DomPurify.sanitize(data)}
         }
 
         render() {

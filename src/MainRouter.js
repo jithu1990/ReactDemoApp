@@ -6,6 +6,8 @@ import Attribute from "./components/Attribute";
 import BootBox from "./components/BootBox";
 import DangerHtml from "./components/DangerHtml";
 import noreferrer from "./components/noreferrer";
+import propinject from "./components/propinject";
+import Evall from "./components/Evall";
 
 const MainRouter = () => (
     <div>
@@ -16,6 +18,8 @@ const MainRouter = () => (
             <Route exact path="/markdown" component={MarkDown} />
             <Route exact path="/bootbox" component={BootBox} />
             <Route exact path="/noreferrer" component={noreferrer} />
+            <Route exact path="/propinject" component={propinject} />
+            <Route exact path="/eval" component={Evall} />
 
             {/* <Route exact path="/" component={Signin} /> */}
         </Switch>
